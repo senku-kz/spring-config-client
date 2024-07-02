@@ -8,7 +8,8 @@ https://howtodoinjava.com/spring-cloud/spring-cloud-config-server-git/
 
 https://docs.spring.io/spring-cloud-config/docs/current/reference/html/#_environment_repository
 
-
+https://habr.com/ru/companies/otus/articles/590761/
+Information about /actuator/refresh
 
 ### The HTTP service has resources in the following form:
 

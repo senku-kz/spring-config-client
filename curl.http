@@ -3,3 +3,9 @@ GET http://localhost:8888/spring-config-client/default
 
 ### GET request to client service
 GET http://localhost:8080/msg
+
+### List of available actuators
+GET http://localhost:8080/actuator
+
+### Refresh the configuration
+POST http://localhost:8080/actuator/refresh
