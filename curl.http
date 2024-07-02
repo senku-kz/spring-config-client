@@ -1,0 +1,5 @@
+### GET request to config server
+GET http://localhost:8888/spring-config-client/default
+
+### GET request to client service
+GET http://localhost:8080/msg
