@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+    config-client:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: config-client:1.0.0
+        container_name: config-client
+        restart: always
+        ports:
+            - "8080:8080"
+        networks:
+            - project_network
+        environment:
+            - JAVA_OPTS=-Xms64m -Xmx256m
+
+networks:
+    project_network:
+        external: true
+
+# docker network list
+# docker network create project_network
+# docker network inspect project_network
+
+#docker save -o config-service-app-1.0.0.tar config-service-app:1.0.0
+#docker load -i config-service-app-1.0.0.tar
